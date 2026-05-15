@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Login Futurista</title>
-
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 *{
@@ -25,6 +17,7 @@ body{
 }
 
 /* Fondo animado */
+
 body::before{
     content:"";
     position:absolute;
@@ -50,9 +43,17 @@ body::after{
 }
 
 @keyframes float{
-    0%{transform:translateY(0px);}
-    50%{transform:translateY(20px);}
-    100%{transform:translateY(0px);}
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(20px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
 }
 
 .login-container{
@@ -68,6 +69,7 @@ body::after{
 }
 
 /* LOGO COMPLEJO */
+
 .logo{
     position:relative;
     width:120px;
@@ -202,42 +204,3 @@ button:hover{
 .extra a:hover{
     text-decoration:underline;
 }
-</style>
-</head>
-
-<body>
-
-<div class="login-container">
-
-    <div class="logo">
-        <div class="circle1"></div>
-        <div class="circle2"></div>
-        <div class="circle3"></div>
-        <div class="center"></div>
-    </div>
-
-    <h2>Iniciar Sesión</h2>
-
-    <form>
-        <div class="input-group">
-            <label>Correo</label>
-            <input type="email" placeholder="ejemplo@email.com">
-        </div>
-
-        <div class="input-group">
-            <label>Contraseña</label>
-            <input type="password" placeholder="********">
-        </div>
-
-        <button type="submit">Entrar</button>
-
-        <div class="extra">
-            ¿Olvidaste tu contraseña?
-            <a href="#">Recuperar</a>
-        </div>
-    </form>
-
-</div>
-
-</body>
-</html>
